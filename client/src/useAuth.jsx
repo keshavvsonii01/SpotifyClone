@@ -8,7 +8,7 @@ export default function useAuth(code) {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3001/login", {
+      .post("https://spotifyclone-back.onrender.com/login", {
         code,
       })
       .then(res => {
